@@ -12,7 +12,7 @@
         <color name="warmBackground">#FFDAB9</color>
         <color name="buttonColor">#FF6347</color> <!-- Tomato color for the button -->
         <color name="inputBackground">#FFF5EE</color> <!-- Seashell color for input backgrounds -->
-        <!-- Define any other colors you need -->
+        <!-- Define color -->
 
 
 </resources>
