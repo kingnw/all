@@ -77,7 +77,18 @@ dependencies {
     // Mockito dependencies
     testImplementation(libs.mockito.core)
     testImplementation(libs.mockito.kotlin) // Optional for Kotlin support
+
+
+    // JUnit for local unit tests
+    testImplementation(libs.junit)
+
+
+    // Espresso core for UI tests
+    androidTestImplementation(libs.androidx.espresso.core.v340)
+
 }
+
+
 
 // Ensure kapt settings are outside of the dependencies block
 kapt {
