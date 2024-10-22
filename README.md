@@ -9,13 +9,21 @@ Password: s4680098
 Overview
 Welcome to the NIT3213 Android project! This app is designed for an assignment where users can log in and interact with an API to view a list of entities. Once logged in, you’ll see a dashboard filled with architecture, each showing a profile image and basic details. Clicking on any item lets you dive deeper into its information.
 
+
+Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project
+
+all of my testing can be found in app:kotlin+java:com.example.nit3213project(test)
+
+all other things including layout/ui used can be found  in app:resource
+
+
 Key Features
 
 Login Functionality:
 
 Simply enter your username and password to log in. The app checks these credentials with an API and retrieves a special key (keypass) for accessing other features.
-Dashboard:
 
+Dashboard:
 After logging in, you’ll land on the dashboard, which displays a list of entities fetched from the API. Each entry includes a profile image and some info about the entity.
 Entity Details:
 
