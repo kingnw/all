@@ -10,11 +10,15 @@ Overview
 Welcome to the NIT3213 Android project! This app is designed for an assignment where users can log in and interact with an API to view a list of entities. Once logged in, you’ll see a dashboard filled with architecture, each showing a profile image and basic details. Clicking on any item lets you dive deeper into its information.
 
 
+
+
 Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project
 
-all of my testing can be found in app:kotlin+java:com.example.nit3213project(test)
+all of my testing can be found in app:kotlin+java:com.example.nit3213project(test) in app and app/src/test/java/com/example/nit3213project in github
 
 all other things including layout/ui used can be found  in app:resource
+
+
 
 
 Key Features
