@@ -12,11 +12,11 @@ Welcome to the NIT3213 Android project! This app is designed for an assignment w
 
 
 
-Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project
+Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project in Android studio and app/src/main/java/com/example/nit3213project in github.
 
-all of my testing can be found in app:kotlin+java:com.example.nit3213project(test) in app and app/src/test/java/com/example/nit3213project in github
+all of my testing can be found in app:kotlin+java:com.example.nit3213project(test) in Android studio and app/src/test/java/com/example/nit3213project in github
 
-all other things including layout/ui used can be found  in app:resource
+all other things including layout/ui used can be found  in app:resource in Android Studio and app/src/main/res in github
 
 
 
