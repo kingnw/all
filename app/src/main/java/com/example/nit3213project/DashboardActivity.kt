@@ -18,21 +18,21 @@ class DashboardActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var entityAdapter: EntityAdapter
-    private var entities: List<Entity> = emptyList()
+    private var entities: List<Entity> = emptyList() // List to hold Entity objects
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
         recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = LinearLayoutManager(this) // Set LinearLayoutManager for RecyclerView
 
-        val keypass = intent.getStringExtra("KEYPASS")
+        val keypass = intent.getStringExtra("KEYPASS") // Retrieve keypass from intent
 
         if (keypass != null) {
-            fetchDashboardData(keypass)
+            fetchDashboardData(keypass) // Fetch data if keypass is available
         } else {
-            Toast.makeText(this, "Keypass is missing!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Keypass is missing!", Toast.LENGTH_SHORT).show() // Show error if keypass is missing
         }
     }
 
@@ -55,8 +55,8 @@ class DashboardActivity : AppCompatActivity() {
         entityAdapter = EntityAdapter(entities) { entity ->
             val intent = Intent(this@DashboardActivity, DetailsActivity::class.java)
             intent.putExtra("ENTITY", entity)  // Pass the selected entity to DetailsActivity
-            startActivity(intent)
+            startActivity(intent) // Start DetailsActivity with the selected entity
         }
-        recyclerView.adapter = entityAdapter
+        recyclerView.adapter = entityAdapter // Set the adapter for the RecyclerView
     }
 }
