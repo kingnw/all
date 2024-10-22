@@ -56,12 +56,14 @@ Here's a breakdown of the key directories and files in the project:
 ### **Source Code:**
 - **Package**: `com.example.nit3213project`
   - Located at: `app/src/main/java/com/example/nit3213project` (GitHub)
+  - Located at: `app:kotlin+java:com.example.nit3213project` (Android Studio)
   - Contains all the **Activity** files and **network/api** files.
 
 ### **Layouts and UI:**
 - **Resource Folder**: 
   - Located at: `app/src/main/res` (GitHub)
-  - Contains all the **layout** files for the user interface.
+  - Located at: `app/res`(Android Studio)
+  - Contains all the **UI**  related files like  **layout** files for the user interface.
 
 ### **Testing:**
 - **Unit Tests**:
