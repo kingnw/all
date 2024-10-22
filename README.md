@@ -1,9 +1,9 @@
-NIT3213 Android Project
+**NIT3213 Android Project**
 
 Login Credentials:
 
-Username: Safal
-Password: s4680098
+**Username: Safal
+Password: s4680098**
 
 
 Overview
@@ -11,42 +11,43 @@ Welcome to the NIT3213 Android project! This app is designed for an assignment w
 
 
 
-
-Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project in Android studio and app/src/main/java/com/example/nit3213project in github.
+``
+_Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project in Android studio and app/src/main/java/com/example/nit3213project in github.
 
 all of my testing can be found in app:kotlin+java:com.example.nit3213project(test) in Android studio and app/src/test/java/com/example/nit3213project in github
 
-all other things including layout/ui used can be found  in app:resource in Android Studio and app/src/main/res in github
-
+all other things including layout/ui used can be found  in app:resource in Android Studio and app/src/main/res in github_
+``
 
 
 
 Key Features
 
-Login Functionality:
+**Login Functionality:**
 
 Simply enter your username and password to log in. The app checks these credentials with an API and retrieves a special key (keypass) for accessing other features.
 
-Dashboard:
+**Dashboard:**
 After logging in, you’ll land on the dashboard, which displays a list of entities fetched from the API. Each entry includes a profile image and some info about the entity.
-Entity Details:
+
+**Entity Details:**
 
 Wanna to know more about an entity? Just click on it, and you’ll be taken to a details page showing all the relevant information, like its name, culture, and domain.
 
 
-Profile Images:
+**Profile Images:**
 
 To make things visually appealing details is accompanied by relevent  picture.
 
-Unit Testing:
+**Unit Testing:**
 
 i have  included some basic unit tests to check the login process and ensure the app interacts with the API correctly.
 
-API Endpoints
+**API Endpoints**
 The app communicates with these API endpoints:
 
-Login:
-
+**Login:**
+_**Please be advised that when you run app it might take two or three tries before you can log**_ in.
 Use POST /footscray/auth to send your username and password, which will return a keypass.
 Dashboard:
 
