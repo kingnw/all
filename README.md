@@ -76,7 +76,7 @@ Here's a breakdown of the key directories and files in the project:
 
 ### What You Need
 1. **Android Studio**: Ensure you have Android Studio installed to run the project.
-2. **API Access**: Make sure you can access the relevant API;s.
+2. **API Access**: Make sure you can access the relevant API's.
 
 ### Installation Steps
 1. **Clone the Repository**:
