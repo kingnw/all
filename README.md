@@ -9,7 +9,7 @@ Welcome to the NIT3213 Android project! This application is part of an assignmen
 ## Key Features
 
 ### 1. **Login Functionality**
-- **Simple Login**: Enter your credentials to authenticate. The app checks your username and password with an API and retrieves a `keypass` that grants access to other features.
+- **Simple Login**: Enter your credentials to authenticate, but incase u wanna login in mine just put **Safal** as username and **s4680098** as password. The app checks your username and password with an API and retrieves a `keypass` that grants access to other features.
   
 - **API Authentication Endpoint**: 
   - `POST /footscray/auth` 
