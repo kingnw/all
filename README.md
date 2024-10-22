@@ -63,7 +63,7 @@ API Access: Ensure you can access the API at https://nit3213-api-h2b3-latest.onr
 Installation Steps
 Clone the Repository:
 
-Go to the repository:(https://github.com/kingnw/krki.git) and clone it to your local machine.
+Go to the repository:(https://github.com/kingnw/all.git) and clone it to your local machine.
 
 Download as ZIP:
 
@@ -71,6 +71,6 @@ If you prefer, click the green "Code" button on the GitHub page and select "Down
 
 Extract the Zip File:
 
-Find the downloaded file (hum.zip) and unzip it.
+Find the downloaded file (downloadthis.zip) and unzip it.
 
 
