@@ -1,76 +1,82 @@
-**NIT3213 Android Project**
+# NIT3213 Android Project
 
-Login Credentials:
+## Overview
 
-**Username: Safal
-Password: s4680098**
+Welcome to the NIT3213 Android project! This application is part of an assignment where users can log in and interact with an API to view a list of architectural entities. The app features a login screen, a dashboard displaying a list of architecture entities, and a detailed information page for each entity.
 
+---
 
-Overview
-Welcome to the NIT3213 Android project! This app is designed for an assignment where users can log in and interact with an API to view a list of entities. Once logged in, you’ll see a dashboard filled with architecture, each showing a profile image and basic details. Clicking on any item lets you dive deeper into its information.
+## Key Features
 
+### 1. **Login Functionality**
+- **Simple Login**: Enter your credentials to authenticate. The app checks your username and password with an API and retrieves a `keypass` that grants access to other features.
+  
+- **API Authentication Endpoint**: 
+  - `POST /footscray/auth` 
+  - Returns a `keypass` upon successful login.
 
+- **Note**: You may need to attempt the login process two or three times due to API response times.
 
-``
-_Project guide:  all of my activity files as well as network and api files and be found in  app:kotlin+java:com.example.nit3213project in Android studio and app/src/main/java/com/example/nit3213project in github.
+---
 
-all of my testing can be found in app:kotlin+java:com.example.nit3213project(test) in Android studio and app/src/test/java/com/example/nit3213project in github
+### 2. **Dashboard**
+- **Entity List**: Once logged in, the dashboard displays a list of architecture entities fetched from the API. Each entry includes a **profile image** and **basic information** about the entity.
+  
+- **API Fetch Endpoint**: 
+  - `GET /dashboard/{keypass}`
+  - Retrieves the list of entities using the `keypass` received during login.
 
-all other things including layout/ui used can be found  in app:resource in Android Studio and app/src/main/res in github_
-``
+---
 
+### 3. **Entity Details**
+- **Detailed View**: Click on any entity in the dashboard to view more information, such as:
+  - **Name**
+  - **Year Built**
+  - **Architect**
+  - **Location**
+  - **Height**
+  - **Style**
+  
+- **Profile Image**: Each entity’s details page is accompanied by a relevant picture.
 
+---
 
-Key Features
+### 4. **Unit Testing**
+- Basic unit tests are included to validate the login process and ensure that the app interacts with the API correctly.
+- The tests are located in:
+  - `app/src/test/java/com/example/nit3213project` (GitHub)
+  - `app:kotlin+java:com.example.nit3213project(test)` (Android Studio)
 
-**Login Functionality:**
+---
 
-Simply enter your username and password to log in. The app checks these credentials with an API and retrieves a special key (keypass) for accessing other features.
+## Project Structure
 
-**Dashboard:**
-After logging in, you’ll land on the dashboard, which displays a list of entities fetched from the API. Each entry includes a profile image and some info about the entity.
+Here's a breakdown of the key directories and files in the project:
 
-**Entity Details:**
+### **Source Code:**
+- **Package**: `com.example.nit3213project`
+  - Located at: `app/src/main/java/com/example/nit3213project` (GitHub)
+  - Contains all the **Activity** files and **network/api** files.
 
-Wanna to know more about an entity? Just click on it, and you’ll be taken to a details page showing all the relevant information, like its name, culture, and domain.
+### **Layouts and UI:**
+- **Resource Folder**: 
+  - Located at: `app/src/main/res` (GitHub)
+  - Contains all the **layout** files for the user interface.
 
+### **Testing:**
+- **Unit Tests**:
+  - Located at: `app/src/test/java/com/example/nit3213project` (GitHub)
+  - Includes tests for login functionality and API interactions.
 
-**Profile Images:**
+---
 
-To make things visually appealing details is accompanied by relevent  picture.
+## Installation
 
-**Unit Testing:**
+### What You Need
+1. **Android Studio**: Ensure you have Android Studio installed to run the project.
+2. **API Access**: Make sure you can access the API at `https://nit3213-api-h2b3-latest.onrender.com`.
 
-i have  included some basic unit tests to check the login process and ensure the app interacts with the API correctly.
-
-**API Endpoints**
-The app communicates with these API endpoints:
-
-**Login:**
-_**Please be advised that when you run app it might take two or three tries before you can log**_ in.
-Use POST /footscray/auth to send your username and password, which will return a keypass.
-Dashboard:
-
-After logging in, the app fetches the list of entities using GET /dashboard/{keypass}, where {keypass} is the key you received during login.
-
-Getting Started
-
-What You Need
-
-Android Studio: Make sure you have this installed on your machine.
-API Access: Ensure you can access the API at https://nit3213-api-h2b3-latest.onrender.com.
-
-Installation Steps
-Clone the Repository:
-
-Go to the repository:(https://github.com/kingnw/all.git) and clone it to your local machine.
-
-Download as ZIP:
-
-If you prefer, click the green "Code" button on the GitHub page and select "Download ZIP."
-
-Extract the Zip File:
-
-Find the downloaded file (downloadthis.zip) and unzip it.
-
-
+### Installation Steps
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kingnw/all.git
